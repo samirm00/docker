@@ -1,5 +1,6 @@
 node_modules
 .DS_Store
+.env
 server-logs.txt
 request_logs.txt
 access.log

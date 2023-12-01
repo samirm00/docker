@@ -22,6 +22,22 @@ A container is a runtime instance of a Docker image. It encapsulates an applicat
 docker run node
 ```
 
+### Run an Image Interactively
+
+Run a Docker container interactively based on the "node" image:
+
+```bash
+docker run -it node
+```
+
+### Show All images
+
+Display information about all images:
+
+```bash
+docker images
+```
+
 ### Show All Running Containers
 
 Display information about all running Docker containers:
@@ -36,14 +52,6 @@ List all Docker containers, including those that have exited:
 
 ```bash
 docker ps -a
-```
-
-### Run an Image Interactively
-
-Run a Docker container interactively based on the "node" image:
-
-```bash
-docker run -it node
 ```
 
 ### Build an Image
@@ -86,4 +94,18 @@ Remove a Docker container using its ID or name:
 
 ```bash
 docker rm <container_id_or_name>
+```
+
+### Remove an Image
+
+Remove a Docker image using its ID or name:
+
+```bash
+docker rmi <image_id_or_name>
+```
+
+Remove a Docker image being used by a container:
+
+```bash
+docker rmi <image_id_or_name> -f
 ```
